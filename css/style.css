@@ -763,3 +763,29 @@ html {
 .demo-jin h3 {
   font-family: "Dosis", sans-serif;
 }
+/* Custom Cursor */
+.custom-cursor,
+.custom-cursor-dot {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* decorative */
+.custom-cursor {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.custom-cursor-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
